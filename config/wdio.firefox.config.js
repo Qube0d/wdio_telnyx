@@ -1,6 +1,4 @@
-const {
-    config
-} = require("../config/wdio.conf.js");
+import { config } from "../config/wdio.conf.js";
 
 const firefoxConfig = {
     ...config,
@@ -17,4 +15,5 @@ const firefoxConfig = {
     path: "/wd/hub",
 };
 
-exports.config = firefoxConfig;
+const _config = firefoxConfig;
+export { _config as config };

@@ -1,5 +1,5 @@
-const { config } = require('../config/wdio.conf.js');
-require('../config/wdio.conf')
+import { config } from '../config/wdio.conf.js';
+
 
 const chromeConfig = {
     ...config,
@@ -14,4 +14,5 @@ const chromeConfig = {
     path: "/wd/hub",
 };
 
-exports.config = chromeConfig;
+const _config = chromeConfig;
+export { _config as config };

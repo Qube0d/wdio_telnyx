@@ -11,8 +11,15 @@
     "wdio-chromedriver-service": "^8.0.1"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js",
-    "wdio:1": "wdio run ./wdio.conf.js --spec ./test/specs/careers.e2e.js",
+    "wdio": "wdio run ./config/wdio.conf.js",
+    "wdio:careers": "wdio run ./config/wdio.conf.js --spec ./test/specs/careers.e2e.js",
+    "wdio:data": "wdio run ./config/wdio.conf.js --spec ./test/specs/data.privacy.e2e.js",
+    "wdio:home": "wdio run ./config/wdio.conf.js --spec ./test/specs/home.e2e.js",
+    "wdio:report": "wdio run ./config/wdio.conf.js --spec ./test/specs/reportabuse.e2e.js",
+    "wdio:resources": "wdio run ./config/wdio.conf.js --spec ./test/specs/resources.e2e.js",
+    "wdio:sign": "wdio run ./config/wdio.conf.js --spec ./test/specs/signup.e2e.js",
+    "wdio:support": "wdio run ./config/wdio.conf.js --spec ./test/specs/support.e2e.js",
+    "wdio:about": "wdio run ./config/wdio.conf.js --spec ./test/specs/about.e2e.js",
     "allure:generate": "allure generate allure-results --clean",
     "allure:open": "allure open"
   },

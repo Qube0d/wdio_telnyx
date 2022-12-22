@@ -1,7 +1,7 @@
-import SignUpPage from '../pageobjects/signup.page'
-import HelperPage from '../../helper/helper'
-import AdditionalScripts from '../pageobjects/additional.scripts'
-const helperPage = new HelperPage();
+import SignUpPage from "../pageobjects/signup.page.js";
+import AdditionalScripts from "../pageobjects/additional.scripts.js";
+import HelperPage from "../../helper/helper.js";
+
 
 
 describe('Checking SignUp page', () => {
@@ -9,6 +9,6 @@ describe('Checking SignUp page', () => {
         await browser.url('/sign-up');
         await AdditionalScripts.acceptCookie();
         await SignUpPage.fillAll({ email: "11", name: "223", pass: "4qada" });
-        await expect(SignUpPage.passCamCase).toHaveText(helperPage.passReq.passCamel)
+        await expect(SignUpPage.passCamCase).toHaveText(HelperPage.passReq.passCamel)
     });
 });

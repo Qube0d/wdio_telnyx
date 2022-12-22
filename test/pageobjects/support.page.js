@@ -1,5 +1,5 @@
+import AdditionalScripts from './additional.scripts.js'
 
-import SupportEnv from '../pageobjects/support.env'
 
 class SupportPage{
 
@@ -32,7 +32,7 @@ class SupportPage{
         await this.telnyxHomePage.isClickable();
         await this.telnyxHomePage.click();
         await browser.switchWindow("https://telnyx.com")
-        await SupportEnv.acceptCookie();
+        await AdditionalScripts.acceptCookie();
     }
 
 

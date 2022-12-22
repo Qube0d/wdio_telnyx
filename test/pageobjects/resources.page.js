@@ -1,5 +1,8 @@
-import HelperPage from "../../helper/helper"
-const helperPage = new HelperPage();
+import HelperPage from "../../helper/helper.js"
+
+
+// import HelperPage from "../../helper/helper"
+// const helperPage = new HelperPage();
 
 
 class ResourcesPage{
@@ -27,27 +30,27 @@ class ResourcesPage{
 
     async filterBYMessaging() {
         await this.messagBtn.click();
-        await browser.switchWindow(helperPage.URL.messaging);
+        await browser.switchWindow(HelperPage.URL.messaging);
     }
 
     async filterBYVerifyAPI() {
         await this.apiBtn.click();
-        await browser.switchWindow(helperPage.URL.api);
+        await browser.switchWindow(HelperPage.URL.api);
     }
 
     async filterBYSIPTrunking() {
         await this.sipBtn.click();
-        await browser.switchWindow(helperPage.URL.sip);
+        await browser.switchWindow(HelperPage.URL.sip);
     }
     
     async filterBYFax() {
         await this.faxBtn.click();
-        await browser.switchWindow(helperPage.URL.fax);
+        await browser.switchWindow(HelperPage.URL.fax);
     }
     
     async filterBYWireless() {
         await this.wirBtn.click();
-        await browser.switchWindow(helperPage.URL.wir);
+        await browser.switchWindow(HelperPage.URL.wir);
     }    
     
 

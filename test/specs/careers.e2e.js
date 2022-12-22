@@ -1,11 +1,7 @@
 import CareersPage from "../pageobjects/careers.page.js";
 import AdditionalScripts from "../pageobjects/additional.scripts.js";
 import HelperPage from '../../helper/helper.js';
-//const helperPage = new HelperPage();
-// import CareersPage from '../pageobjects/careers.page';
-// import AdditionalScripts from "../pageobjects/additional.scripts";
-// import HelperPage from "../../helper/helper";
-// const helperPage = new HelperPage();
+
 
 
 

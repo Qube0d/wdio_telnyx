@@ -12,6 +12,8 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
-    "wdio:1": "wdio run ./wdio.conf.js --spec ./test/specs/careers.e2e.js"
+    "wdio:1": "wdio run ./wdio.conf.js --spec ./test/specs/careers.e2e.js",
+    "allure:generate": "allure generate allure-results --clean",
+    "allure:open": "allure open"
   }
 }

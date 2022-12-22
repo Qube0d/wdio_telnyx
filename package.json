@@ -12,14 +12,12 @@
   },
   "scripts": {
     "wdio": "wdio run ./config/wdio.conf.js",
+    "wdio:chrome": "wdio run ./config/wdio.chrome.config.js",
+    "wdio:edge": "wdio run ./config/wdio.edge.config.js",
+    "wdio:firefox": "wdio run ./config/wdio.firefox.config.js",
+
     "wdio:careers": "wdio run ./config/wdio.conf.js --spec ./test/specs/careers.e2e.js",
-    "wdio:data": "wdio run ./config/wdio.conf.js --spec ./test/specs/data.privacy.e2e.js",
-    "wdio:home": "wdio run ./config/wdio.conf.js --spec ./test/specs/home.e2e.js",
-    "wdio:report": "wdio run ./config/wdio.conf.js --spec ./test/specs/reportabuse.e2e.js",
-    "wdio:resources": "wdio run ./config/wdio.conf.js --spec ./test/specs/resources.e2e.js",
-    "wdio:sign": "wdio run ./config/wdio.conf.js --spec ./test/specs/signup.e2e.js",
-    "wdio:support": "wdio run ./config/wdio.conf.js --spec ./test/specs/support.e2e.js",
-    "wdio:about": "wdio run ./config/wdio.conf.js --spec ./test/specs/about.e2e.js",
+
     "allure:generate": "allure generate allure-results --clean",
     "allure:open": "allure open"
   },

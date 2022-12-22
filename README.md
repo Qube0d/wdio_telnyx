@@ -31,28 +31,28 @@ npm install
 
 ## Running tests
 
-- Go to the terminal and execute to run tests in all browsers headless mode:
+- Go to the terminal and execute to run tests in all browsers headless, parallel mode:
 
 ```sh
-wdio
+wdio:chrome:edge:firefox
 ```
 
 - Go to the terminal and execute to run tests in chrome headless mode:
 
 ```sh
-wdio:chrome:headless
+wdio:chrome
 ```
 
 - Go to the terminal and execute to run tests in firefox headless mode:
 
 ```sh
-wdio:firefox:headless
+wdio:firefox
 ```
 
 - Go to the terminal and execute to run tests in edge headless mode:
 
 ```sh
-wdio:edge:headless
+wdio:edge
 ```
 
 ## Allure-reports

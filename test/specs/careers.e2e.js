@@ -16,9 +16,9 @@ describe('Careers page', () => {
         await CareersPage.iframeCheck();
         await CareersPage.labelTitle();
         await expect(CareersPage.flexibleGlobalTeamLabelTitle).toHaveText(HelperPage.CareersTitle.firstLabel);
-        await expect(CareersPage.ModernlifeLabelTitle).toHaveText(helperPage.CareersTitle.secondLabel);
-        await expect(CareersPage.helpingYouGrowLabelTitle).toHaveText(helperPage.CareersTitle.thirdLabel);
-        await expect(CareersPage.weHaveFunTooLabelTitle).toHaveText(helperPage.CareersTitle.fourLabel);
+        await expect(CareersPage.ModernlifeLabelTitle).toHaveText(HelperPage.CareersTitle.secondLabel);
+        await expect(CareersPage.helpingYouGrowLabelTitle).toHaveText(HelperPage.CareersTitle.thirdLabel);
+        await expect(CareersPage.weHaveFunTooLabelTitle).toHaveText(HelperPage.CareersTitle.fourLabel);
     });
 }); 
 
